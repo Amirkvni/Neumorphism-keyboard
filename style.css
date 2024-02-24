@@ -53,3 +53,29 @@ body {
 .row input[value="SPACE"] {
   width: 60%;
 }
+@media screen and (max-width: 800px) {
+  .keyboard_section {
+    width: 500px;
+  }
+  .row input {
+    height: 30px;
+    min-width: 30px;
+    font-size: 12px;
+  }
+  .row input:focus {
+    font-size: 12px;
+  }
+  .row {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .keyboard_section {
+    width: 400px;
+  }
+  .row input {
+    height: 20px;
+    min-width: 20px;
+    font-size: 9px;
+  }
+}
