@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  background-color: #dde1e7;
+}
+.container {
+  width: 100%;
+}
+.keyboard_section {
+  background-color: #dde1e7;
+  width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+  padding: 25px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; amir */
+}
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+.row input {
+  background-color: #dde1e7;
+  border: none;
+  box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+  height: 50px;
+  font-size: 20px;
+  min-width: 50px;
+  color: #808080;
+  border-radius: 5px;
+}
+.row input:focus {
+  font-size: 19px;
+  color: #3498db;
+  box-shadow: inset rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    inset rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.row input[value="SPACE"] {
+  width: 60%;
+}
